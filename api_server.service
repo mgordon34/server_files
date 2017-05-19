@@ -1,0 +1,11 @@
+[Unit]
+Description=run_api.sh - Script to run flask webserver
+Documentation=192.168.56.101:8002
+
+[Service]
+Type=simple
+User=matt
+ExecStart=/home/matt/git/server/overRank/api/run_api.sh
+
+[Install]
+WantedBy=multi-user.target

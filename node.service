@@ -1,0 +1,12 @@
+[Unit]
+Description=server.js - web app
+Documentation=https://192.168.56.101:8001
+
+[Service]
+Type=simple
+User=matt
+ExecStart=/usr/bin/node /home/matt/git/server/overRank/server.js
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
